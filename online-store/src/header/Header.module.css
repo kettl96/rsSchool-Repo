@@ -1,0 +1,129 @@
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 40px;
+  border-bottom: 1px solid grey;
+  background-color: white;
+}
+
+.logo_wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.logoImg {
+  height: 75px;
+}
+
+.list_wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.list_item {
+  margin: 10px;
+}
+
+.list_item span {
+  margin: 0 15px;
+}
+
+.list_item img {
+  cursor: pointer;
+  transform: scale(1.4);
+  transition: ease-in-out 0.3s;
+}
+.list_item img:hover {
+  transform: scale(1.5);
+}
+
+
+.logoTittle {
+  padding-right: 10px;
+  margin: 0 0 0 20px;
+  font-style: italic;
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 900;
+  position: relative;
+  background: white;
+  overflow: hidden;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.logoTittle:before {
+  content: '';
+  position: absolute;
+  filter: blur(10px);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: screen;
+  background-image: repeating-linear-gradient(-45deg, transparent, transparent 1em, #37e6d7 1em, #636363 50%), repeating-linear-gradient(45deg, #48f9ff, #2ccabd 1em, rgb(216, 216, 216) 1em, #BFE2FF 50%);
+  background-size: 3em 3em, 2em 2em;
+  animation-name: ani;
+  animation-duration: 8s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes ani {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: 100% 0;
+  }
+}
+
+@media (max-width: 765px) {
+  .wrapper {
+    padding: 10px 20px;
+  }
+  
+  .list_wrapper {
+    padding: 0;
+    width: 150px;
+    justify-content: space-between;
+  }
+  .list_item span {
+    margin: 0 0px 0 15px;
+  }
+  .list_item {
+    margin: 5px;
+  }
+}
+@media (max-width: 620px) {
+  .logoTittle {
+    max-width: 170px;
+    font-size: 30px;
+  }
+}
+@media (max-width: 510px) {
+  .wrapper {
+    padding: 8px 10px;
+  }
+  .list_item span {
+    display: none;
+  }
+  .list_wrapper {
+   width: 80px;
+    justify-content: space-around;
+  }
+}
+@media (max-width: 400px) {
+  .list_wrapper {
+    margin: 0;
+    flex-direction: column;
+   }
+   .logoTittle {
+    font-size: 22px;
+   }
+   .logoImg {
+    height: 60px;
+  }
+}

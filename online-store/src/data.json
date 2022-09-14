@@ -1,0 +1,123 @@
+[
+  {
+    "id": 1,
+    "img": "img/main/levo-hero.jpeg",
+    "name": "S-Works Turbo Levo",
+    "producer": "Specialized",
+    "year": "2022",
+    "price": "15000",
+    "type": "Mountain",
+    "electric": "Electric"
+  },
+  {
+    "id": 2,
+    "img": "img/main/kenevo-hero.jpeg",
+    "name": "S-Works Turbo Kenevo SL",
+    "producer": "Specialized",
+    "year": "2021",
+    "price": "14800",
+    "type": "Mountain",
+    "electric": "Electric"
+  },
+  {
+    "id": 3,
+    "img": "img/main/levo-sl.jpeg",
+    "name": "S-Works Turbo Levo SL",
+    "producer": "Specialized",
+    "year": "2022",
+    "price": "14500",
+    "type": "Mountain",
+    "electric": "Electric"
+  },
+  {
+    "id": 4,
+    "img": "img/main/stumpjumper-evo.jpeg",
+    "name": "Stumpjumper EVO",
+    "producer": "Specialized",
+    "year": "2020",
+    "price": "13200",
+    "type": "Mountain",
+    "electric": "no"
+  },
+  {
+    "id": 5,
+    "img": "img/main/epic-evo.jpeg",
+    "name": "S-Works Epic EVO",
+    "producer": "Specialized",
+    "year": "2022",
+    "price": "13500",
+    "type": "Mountain",
+    "electric": "no"
+  },
+  {
+    "id": 6,
+    "img": "img/main/tarmac.jpeg",
+    "name": "Tarmac SL7 Pro",
+    "producer": "Specialized",
+    "year": "2021",
+    "price": "9200",
+    "type": "Road",
+    "electric": "no"
+  },
+  {
+    "id": 7,
+    "img": "img/main/trail2.jpeg",
+    "name": "Trail 2 29",
+    "producer": "Cannondale",
+    "year": "2019",
+    "price": "2500",
+    "type": "Mountain",
+    "electric": "no"
+  },
+  {
+    "id": 8,
+    "img": "img/main/bad-habit.jpeg",
+    "name": "BAD HABIT AL5",
+    "producer": "Cannondale",
+    "year": "2018",
+    "price": "3400",
+    "type": "Mountain",
+    "electric": "no"
+  },
+  {
+    "id": 9,
+    "img": "img/main/cube-pro.jpeg",
+    "name": "Stereo 120 Pro 29",
+    "producer": "Cube",
+    "year": "2019",
+    "price": "3300",
+    "type": "Mountain",
+    "electric": "no"
+  },
+  {
+    "id": 10,
+    "img": "img/main/cube-stereo.jpeg",
+    "name": "Stereo Hybrid 120",
+    "producer": "Cube",
+    "year": "2021",
+    "price": "6900",
+    "type": "Mountain",
+    "electric": "Electric"
+  },
+  {
+    "id": 11,
+    "img": "img/main/cube-nuroad.jpeg",
+    "name": "NUROAD C:62",
+    "producer": "Cube",
+    "year": "2022",
+    "price": "7900",
+    "type": "Road",
+    "electric": "no"
+  },
+  {
+    "id": 12,
+    "img": "img/main/cannondale-hi-mod.jpeg",
+    "name": "Hi-MOD Ultimate",
+    "producer": "Cannondale",
+    "year": "2020",
+    "price": "9900",
+    "type": "Mountain",
+    "electric": "no"
+  }
+
+]

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cozy House</title>
+  <link rel="icon" href="./../../assets/img/favicon.png">
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Tinos:regular,italic,700,700italic" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="burger_background"></div>
+  <div class="popup_wrapper">
+    <div class="popup_container">
+      <div class="popup_content">
+        <div class="popup_img"></div>
+        <div class="popup_text_container">
+          <div class="popup_title">Jennifer</div>
+          <div class="popup_type_pet">dog</div>
+          <div class="popup_description">Jennifer is a sweet 2 months old Labrador that is patiently waiting to find
+            a new forever home. This girl really enjoys being able to go outside to run and play, but won't hesitate
+            to play up a storm in the house if she has all of her favorite toys.
+          </div>
+          <div class="popup_list_container">
+            <ul class="popup_list">
+              <li ><span class="bold">Age:</span><span class="popup_list_age"></span></li>
+              <li ><span class="bold">Inoculation:</span><span class="popup_list_inoculations"></span></li>
+              <li ><span class="bold">Diseases:</span><span class="popup_list_diseases"></span></li>
+              <li ><span class="bold">Parasites:</span><span class="popup_list_parasites"></span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="popup_close_button">&#215;</div>
+      </div>
+    </div>
+  </div>
+  <div class="wrapper">
+    <div class="wrapper__container">
+      <header>
+        <div class="header__container">
+          <div class="logo">
+            <a href="../main/index.html">
+              <h1>Cozy House</h1>
+            </a>
+            <div class="sublogo">Shelter for pets in Boston</div>
+          </div>
+          <div class="menu__icon">
+            <span></span>
+          </div>
+          <div class="nav__menu">
+            <div class="logo logo_burger">
+              <a href="../main/index.html">
+                <h1>Cozy House</h1>
+              </a>
+              <div class="sublogo">Shelter for pets in Boston</div>
+            </div>
+            <ul class="nav__links">
+              <li class="nav__link "><a href="../main/index.html"> About the shelter</a></li>
+              <li class="nav__link active"><a href="">Our pets</a></li>
+              <li class="nav__link"><a href="../main/index.html#help">Help the shelter</a></li>
+              <li class="nav__link"><a href="#contacts">Contacts</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </header>
+
+      <!-- Pets -->
+      <div class="pets">
+        <div class="pets__tittle">
+          Our friends who <br> are looking for a house
+        </div>
+        <div class="slider">
+          <div class="slide">
+            <div class="slide_card">
+              <div class="pet__img"></div>
+              <div class="pet__name"></div>
+              <button class="pet__more">Learn more</button>
+            </div>
+            <div class="slide_card">
+              <div class="pet__img"></div>
+              <div class="pet__name"></div>
+              <button class="pet__more">Learn more</button>
+            </div>
+            <div class="slide_card">
+              <div class="pet__img"></div>
+              <div class="pet__name"></div>
+              <button class="pet__more">Learn more</button>
+            </div>
+            <div class="slide_card pre-last_card">
+              <div class="pet__img"></div>
+              <div class="pet__name"></div>
+              <button class="pet__more">Learn more</button>
+            </div>
+            <div class="slide_card pre-last_card">
+              <div class="pet__img"></div>
+              <div class="pet__name"></div>
+              <button class="pet__more">Learn more</button>
+            </div>
+            <div class="slide_card pre-last_card">
+              <div class="pet__img"></div>
+              <div class="pet__name"></div>
+              <button class="pet__more">Learn more</button>
+            </div>
+            <div class="slide_card last_card">
+              <div class="pet__img"></div>
+              <div class="pet__name"></div>
+              <button class="pet__more">Learn more</button>
+            </div>
+            <div class="slide_card last_card">
+              <div class="pet__img"></div>
+              <div class="pet__name"></div>
+              <button class="pet__more">Learn more</button>
+            </div>
+          </div>
+
+        </div>
+        <div class="paginator">          
+          <a class="paginator_buttons start_page noactive" ">&#60;&#60;</a>
+          <a class="paginator_buttons prev_page noactive" onclick="changePage(0)">&#60;</a>
+          <a class="paginator_buttons cur_page">1</a>
+          <a class="paginator_buttons next_page" onclick="changePage(1)">&#62;</a>
+          <a class="paginator_buttons last_page">&#62;&#62;</a>
+        </div>
+      </div>
+      <footer>
+        <div class="footer__content" id="contacts">
+          <div class="contacts">
+            <div class="contacts__tittle titl">
+              For questions and suggestions
+            </div>
+            <div class="email_container">
+              <img src="../../assets/img/footer/mail.svg" alt="email">
+              <a href="mailto:email@shelter.com">email@shelter.com</a>
+            </div>
+            <div class="phone__container">
+              <img src="../../assets/img/footer/phone.svg" alt="phone">
+              <a href="tel:+13 674 567 75 54">+13 674 567 75 54</a>
+            </div>
+          </div>
+          <div class="locations">
+            <div class="locations__tittle titl">
+              We are waiting for your visit
+            </div>
+            <div class="boston_container">
+              <img src="../../assets/img/footer/pin.svg" alt="pin">
+              <a target="_blank" rel="noopener noreferrer" href="https://goo.gl/maps/X4LcDLhFNLcCfASe6">
+                1 Central Street, Boston (entrance from the store)
+              </a>
+            </div>
+            <div class="london__container">
+              <img src="../../assets/img/footer/pin.svg" alt="pin">
+              <a target="_blank" rel="noopener noreferrer" href="https://goo.gl/maps/WVFGWjmNVdqFeonJ9">
+                18 South Park, London
+              </a>
+            </div>
+          </div>
+          <div class="footer__img">
+            <img src="../../assets/img/footer-puppy.png" alt="puppy">
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

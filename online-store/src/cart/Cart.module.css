@@ -1,0 +1,162 @@
+.cart__sidebar_wrapper {
+  /* display: none; */
+  overflow: hidden;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 101%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 6;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out, visibility 0.4s ease-in-out;
+}
+
+.visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.cart__sidebar {
+  z-index: 8;
+  position: absolute;
+  width: calc(100vw - 60%);
+  height: 100%;
+  right: -45%;
+  background: #FFFFFF;
+  box-shadow: -10px 4px 24px rgba(0, 0, 0, 0.1);
+  transition: 0.8s;
+}
+
+.cart_visible {
+  right: 0;
+}
+
+h2 {
+  margin: 10px 0px 5px 20px;
+}
+
+.cartItem {
+  margin: 20px 5px 0 8px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 96%;
+  height: 23.5vw;
+  border: 1px solid #dbdbdb;
+  border-radius: 20px;
+
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.cartItem__info p {
+  max-width: 260px;
+  font-size: 18px;
+  margin: 8px 0 10px 12px;
+}
+
+.cartItem__info b {
+  max-width: 160px;
+  font-size: 16px;
+  margin: 8px 0 10px 12px;
+}
+
+.cart__removeBtn {
+  margin: 8px 10px 0 0;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: 0.3s ease;
+}
+
+.cart__removeBtn:hover {
+  opacity: 1;
+}
+
+.cartItem img:first-child {
+  padding-bottom: 14px;
+}
+
+@media (max-width: 1000px) {
+  .cart__sidebar {
+    width: calc(100vw - 50%);
+  }
+  .cartItem {
+    height: 30vw;
+  }
+}
+@media (max-width: 580px) {
+  .cart__sidebar {
+    width: calc(100vw - 25%);
+  }
+  .cartItem {
+    height: 43vw;
+  }
+}
+
+.content__wrapper {
+  height: 92vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.content__wrapper div:first-child {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.cart__result {
+  margin: 0px 30px 10px 30px;
+}
+
+.result__total {
+  display: flex;
+  margin: 15px 0;
+}
+
+.result__total div:first-child {
+  font-size: 18px;
+}
+
+.dash {
+  display: flex;
+  flex: 1;
+  border-bottom: 1px dashed #DFDFDF;
+  margin: 0 15px;
+}
+
+.cart__result button {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  background: #7ddbc7;
+  border-radius: 18px;
+  border: 0;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+
+.cart__result button:hover {
+  background: rgb(36, 36, 36);
+}
+
+.cart__result button:active {
+  background: #7ddbc7;
+}
+
+.arrow {
+  transition: transform 0.2s ease-in-out;
+  position: absolute;
+  right: 40px;
+  top: 13px;
+}
+
+.cart__result button:hover .arrow {
+  transform: translateX(12px);
+}

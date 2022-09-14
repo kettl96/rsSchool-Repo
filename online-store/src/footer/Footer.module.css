@@ -1,0 +1,39 @@
+.wrapper {
+  margin-top: 2px;
+  position: sticky;
+  bottom: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0px -10px 12px white;
+  z-index: 5;
+}
+
+.github {
+  padding: 0px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.github img {
+  width: 35px;
+}
+
+.github div {
+  font-family: 'Edu SA Beginner', cursive;
+  font-weight: 500;
+  text-shadow: 2px 0px 2px aquamarine;
+}
+
+.date {
+  cursor: default;
+}
+
+.rs {
+  padding: 0px 15px;
+
+  width: 70px;
+}

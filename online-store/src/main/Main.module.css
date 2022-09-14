@@ -1,0 +1,249 @@
+.wrapper {
+  width: 100%;
+  padding: 20px 0 0 0;
+  min-height: 85vh;
+}
+
+.main_title {
+  display: flex;
+  align-items: center;
+}
+
+.main_title select {
+  height: 20px;
+  margin-left: 10px;
+}
+
+h1 {
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10px 20px 28px;
+  /* max-width: 90%; */
+  /* padding: 0 20px 0 28px; */
+}
+
+.search__container {
+  background-color: white;
+  position: relative;
+  border: 1px solid #F3F3F3;
+  border-radius: 10px;
+  height: 35px;
+  padding: 0 15px;
+}
+
+.search__container input {
+  width: 130px;
+  font-size: 16px;
+  border: 0;
+  padding: 10px 0 5px 10px;
+  outline: none;
+}
+
+.card__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cross {
+  cursor: pointer;
+  position: absolute;
+  top: 4%;
+  right: 2%;
+  border-radius: 50%;
+  transform: rotate(45deg);
+  border: 1px solid rgb(235, 235, 235);
+}
+
+.sort {
+  display: flex;
+  align-items: center;
+}
+
+select {
+  height: 20px;
+  width: 100px;
+  margin-right: 15px;
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+}
+
+.filters div {
+  margin: 0 3px 0 0;
+}
+
+.select_wrapper {}
+
+.select_wrapper select {
+  cursor: pointer;
+  width: 140px;
+  border: none;
+  background-color: #f3f2f2;
+}
+
+.select_wrapper::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20%;
+  height: 100%;
+  text-align: center;
+  font-size: 28px;
+  line-height: 45px;
+  background-color: red;
+  pointer-events: none;
+}
+
+.select_wrapper:hover::before {
+  color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.select_wrapper select option {
+  padding: 30px;
+}
+
+
+/* switch */
+/* The switch - the box around the slider */
+.switch {
+  transform: rotate(-90deg);
+  position: relative;
+  display: inline-block;
+  width: 35px;
+  height: 20px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  display: none;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(218, 216, 216);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  left: 2px;
+  bottom: 3px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked+.slider {
+  background-color: #7ddbc7;
+}
+
+input:focus+.slider {
+  box-shadow: 0 0 1px #7ddbc7;
+}
+
+input:checked+.slider:before {
+  transform: translateX(16px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.nothing_wrapper {
+  border: 1px solid rgb(125, 219, 199, 0.3);
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 5px 5px 5px rgb(125, 219, 199, 0.3);
+  transition: ease-in-out 0.5s;
+}
+
+.nothing_wrapper div {
+  font-size: 24px;
+  font-family: 'Edu SA Beginner', cursive;
+
+}
+
+.nothing_wrapper img {
+  width: 50px;
+}
+
+@media (max-width: 960px) {
+  .header {
+    flex-direction: column;
+  }
+
+  .sort {
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 670px) {
+
+  .sort {
+    justify-content: flex-start;
+
+    flex-wrap: wrap;
+  }
+
+  .search__container {
+    margin: 15px 0;
+  }
+
+  h1 {
+    margin: 0 0 10px 0;
+  }
+}
+
+@media (max-width: 488px) {
+  .select_wrapper select {
+    width: 65px;
+  }
+}
+
+@media (max-width: 406px) {
+  .select_wrapper {
+    margin: 0px 0 10px 0;
+  }
+
+  .filters {
+    margin: 0px 0 10px 0;
+
+  }
+
+  .switch {
+    transform: rotate(0deg);
+
+  }
+
+  .search__container input {
+    width: 75%;
+  }
+}
